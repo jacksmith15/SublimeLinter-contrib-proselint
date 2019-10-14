@@ -16,11 +16,7 @@ class Proselint(Linter):
 
     """Provides an interface to proselint."""
 
-    # syntax = ('*')
     cmd = 'proselint'
-    # executable = None
-    # version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    # version_requirement = '>= 0.0.0'
     regex = (
         r'^.+?:(?P<line>\d+):(?P<col>\d+): \S* (?P<message>.+)'
     )
@@ -31,6 +27,3 @@ class Proselint(Linter):
     defaults = {
         "selector": 'text.html.markdown, text.plain, text.tex.latex, comment'
     }
-    # inline_settings = None
-    # inline_overrides = None
-    # comment_re = None
